@@ -1,15 +1,31 @@
-$body-bg: black;
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-$navbar-default-bg: white;
-$navbar-default-link-color: black;
+$body-bg: 													black;
+$font-family-sans-serif: 						'Montserrat','Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-default-bg: 								white;
+$navbar-height:											25px;
+$navbar-default-link-color: 				black;
 
-$brand-primary: #3b434f;
+$brand-primary: 										#3b434f;
 
-$jumbotron-padding: 30px;
-$jumbotron-bg: gray;
-$jumbotron-color: white;
+$jumbotron-padding: 								30px;
+$jumbotron-bg: 											gray;
+$jumbotron-color: 									white;
 
-$gray-dark: white;
+$gray-dark: 												white;
 
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.navbar-brand{
+	color: white
+}
+
