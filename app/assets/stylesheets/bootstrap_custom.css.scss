@@ -1,7 +1,15 @@
-$body-bg: #3498db;
+$body-bg: black;
 
-$navbar-default-bg: #7f8c8d;
-$navbar-default-link-color: white;
+$navbar-default-bg: white;
+$navbar-default-link-color: black;
+
+$brand-primary: #3b434f;
+
+$jumbotron-padding: 30px;
+$jumbotron-bg: gray;
+$jumbotron-color: white;
+
+$gray-dark: white;
 
 
 @import 'bootstrap';
