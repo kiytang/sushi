@@ -1,4 +1,5 @@
 Sushi::Application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" # creates a about_path
   get "contact" => "pages#contact"
