@@ -2,10 +2,10 @@
 
 $body-bg: 													black;
 $font-family-sans-serif: 						'Montserrat','Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-default-bg: 								white;
+// $navbar-default-bg: 								white;
 $navbar-height:											45px;
-$navbar-default-link-color: 				black;
-
+$navbar-default-link-color: 				red;
+$navbar-default-brand-color:											white;
 $brand-primary: 										#3b434f;
 
 $jumbotron-padding: 								30px;
@@ -26,6 +26,10 @@ $gray-dark: 												white;
 }
 
 .navbar-brand{
-	color: white
+	color: white;
+}
+
+.navbar-inverse{
+	color: white;
 }
 
