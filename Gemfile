@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.2.4'
+gem 'figaro'
 
 group :development, :test do
   gem 'sqlite3'
