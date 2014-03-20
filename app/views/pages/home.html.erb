@@ -1,9 +1,13 @@
 <!-- <div class ="jumbotron"> -->
 <div class="container center">
 	<h1>SUSHI AFICIONADOS</h1>
-	<p>
-		<%= link_to "Log-In", "#", class: "btn btn-default btn-circle" %>
-		<%= link_to "Sign-Up", "#", class: "btn btn-primary btn-circle" %>
-	</p>
+	<% if user_signed_in? %>
+		#do something
+	<% else %>
+		<p>
+			<%= link_to "Log-In", new_user_session_path, class: "btn btn-default btn-circle" %>
+			<%= link_to "Sign-Up", new_user_registration_path, class: "btn btn-primary btn-circle" %>
+		</p>
+	<% end %>	
 </div>
 <!-- </div> -->

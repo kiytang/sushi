@@ -13,7 +13,7 @@
   <!-- render just means puts content of that partial here -->  
   <%= render 'layouts/header' %>	
 	<div class= "container">
-    <% flash.each do |name, message| %>
+    <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info")%>
     <% end %>
 
