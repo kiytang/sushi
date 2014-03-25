@@ -14,7 +14,8 @@ class PinsController < ApplicationController
 
   # GET /pins/new
   def new
-    @pin = Pin.new
+    # @pin = Pin.new
+    @pin = current_user.pins.build
   end
 
   # GET /pins/1/edit
@@ -24,7 +25,7 @@ class PinsController < ApplicationController
   # POST /pins
   # POST /pins.json
   def create
-    @pin = Pin.new(pin_params)
+    @pin = current_user.pins.build(pin_params)
     if @pin.save
       redirect_to @pin, notice: 'Pin was successfully created.'
     else
