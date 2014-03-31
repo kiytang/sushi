@@ -1,3 +1,5 @@
+<%=render "pages/home" unless user_signed_in? %>
+
 <div id="masonry-pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
    <div class="box panel panel-default">
@@ -6,18 +8,16 @@
        <p><%= pin.description %></p>
        <p><%= pin.user.email if pin.user %></p>     
         <% if pin.user == current_user %>
-        <div class="actions"> 
-          <%= link_to edit_pin_path(pin) do%>
-            <span class="glyphicon glyphicon-edit">Edit
+          <div class="actions"> 
+            <%= link_to edit_pin_path(pin) do%>
+              <span class="glyphicon glyphicon-edit">Edit
             <% end %>  
-          <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do%>
-            <span class="glyphicon glyphicon-trash">Delete
+            <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do%>
+              <span class="glyphicon glyphicon-trash">Delete
             <% end %>
-        <% end %>
-        </div>
+          </div>actions
+        <% end %>  
      </div><!-- panel body --> 
    </div><!-- panel panel-default"  -->
   <% end %>
 </div>
-
-
