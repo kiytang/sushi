@@ -15,15 +15,36 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'New Pin', new_pin_path %></li>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-        <% if user_signed_in? %> 
-          <li><%= link_to "Log-out", destroy_user_session_path, method: :delete %></li>
-          
-          <li><%= link_to "Settings",edit_user_registration_path %></li>
-        <% end %>  
+        <li><%= link_to root_path do%>
+          <span class="glyphicon glyphicon-home"></span>Home
+           <% end %> 
+        </li>
+
+        <li><%= link_to about_path do%>
+          <span class="glyphicon glyphicon-heart"></span>About
+          <% end %>  
+        </li>
+
+        <li><%= link_to contact_path do%>
+          <span class="glyphicon glyphicon-envelope"></span>Contact
+          <% end %>
+        </li>
+
+        <% if user_signed_in? %>
+          <li><%= link_to new_pin_path do%>
+            <span class="glyphicon glyphicon-plus"></span>New Pin
+           <% end %> 
+          </li>
+          <li><%= link_to destroy_user_session_path, method: :delete do%>
+            <span class="glyphicon glyphicon-off">Log-out
+            <% end %>  
+          </li>
+
+          <li><%= link_to edit_user_registration_path do%>
+            <span class="glyphicon glyphicon-cog"></span>Settings
+            <% end %>
+          </li>
+         <% end %>   
       </ul>
     </div><!-- .navbar-collapse -->
   </div> <!-- container-fluid -->
