@@ -1,7 +1,7 @@
 # Sushi Aficionados
 
 ###Task:
-To replicate the Pinterest web application using the Ruby-on Rails framework, so that users can pin their most interesting afindings in the world of Sushi
+To replicate the Pinterest web application using the Ruby-on Rails framework, so that users can pin their most interesting findings in the world of Sushi
 
 The tutorial was provided by [One Month Rails](https://onemonthrails.com/)
 
